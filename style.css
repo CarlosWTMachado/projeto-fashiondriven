@@ -1,3 +1,4 @@
+@import url("./reset.css");
 .d-flex {
     display: flex;
 }
@@ -19,8 +20,15 @@ body {
 
 body {
     background-color: #F2F2F2;
-    width: 1366px;
-    height: 342;
+    overflow: hidden;
+}
+
+.fixed {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
     overflow: hidden;
 }
 
@@ -33,18 +41,121 @@ body {
     padding-left: 80px;
 }
 
-.header-title {
-    color: #FCFCFC;
-    font-weight: normal;
-    font-size: 32px;
-}
-
 .show-ilustracao {
-    position: absolute;
     background-color: #404EED;
-    right: 0px;
     height: 785px;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-left: 30px;
     padding-right: 30px;
+    position: absolute;
+    right: 0;
+}
+
+.show-options {
+    left: 0px;
+    height: 785px;
+    margin-top: 25px;
+    margin-left: 122px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 21px;
+    color: #232323;
+}
+
+.fig {
+    margin: 0;
+    margin-right: 40px;
+}
+
+.img-round {
+    background: #F2F2F2;
+    border: 0.1px solid #C4C4C4;
+    border-radius: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.icone-modelo {
+    width: 80px;
+    height: 80px;
+}
+
+.icone-gola {
+    width: 80px;
+    height: 55px;
+}
+
+.icone-tecido {
+    width: 60px;
+    height: 60px;
+}
+
+.fig>figcaption {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 5px;
+}
+
+.roboto-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+}
+
+#img-link {
+    background: #F2F2F2;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.img-submit {
+    width: 100%;
+    height: 40px;
+    background: #404EED;
+    border-radius: 10px;
+    color: #FCFCFC;
+    font-size: 20px;
+}
+
+.pedidos-text {
+    font-size: 24px;
+}
+
+.pedidos-fig {
+    flex-direction: column;
+    background-color: white;
+    width: 200px;
+    height: 235px;
+    border-radius: 10px;
+    margin: 0;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedidos-fig>figcaption {
+    text-align: center;
+}
+
+.ultimos-pedidos {
+    padding-left: 120px;
+    padding-right: 120px;
 }

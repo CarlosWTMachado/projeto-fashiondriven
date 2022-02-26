@@ -5,17 +5,126 @@
     <meta charset="UTF-8">
     <title>Fashion Driven</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header d-flex align-items-center">
         <img src="assets/Logo.png" alt="logo">
     </header>
-    <div class="show-ilustracao">
-        <img src="assets/ilustração.png" alt="ilustração">
+    <section class="fixed d-flex">
+        <div class="show-options">
+            <p class="roboto-text">escolha o modelo</p>
+            <div class="options modelo">
+                <figure class="fig" onclick="selectOption(this)">
+                    <div class="img-round">
+                        <img src="assets/tshirt.png" alt="tshirt" class="icone-modelo">
+                    </div>
+                    <figcaption class="roboto-text">
+                        T-shirt
+                    </figcaption>
+                </figure>
+                <figure class="fig" onclick="selectOption(this)">
+                    <div class="img-round">
+                        <img src="assets/Camiseta.png" alt="Camiseta" class="icone-modelo">
+                    </div>
+                    <figcaption class="roboto-text">
+                        Camiseta
+                    </figcaption>
+                </figure>
+                <figure class="fig" onclick="selectOption(this)">
+                    <div class="img-round">
+                        <img src="assets/Mangalonga.png" alt="Mangalonga" class="icone-modelo">
+                    </div>
+                    <figcaption class="roboto-text">
+                        Manga longa
+                    </figcaption>
+                </figure>
+            </div>
+            <p class="roboto-text">escolha a gola</p>
+            <div class="options gola">
+                <figure class="fig" onclick="selectOption(this)">
+                    <div class="img-round">
+                        <img src="assets/GolaV.png" alt="GolaV" class="icone-gola">
+                    </div>
+                    <figcaption class="roboto-text">
+                        Gola V
+                    </figcaption>
+                </figure>
+                <figure class="fig" onclick="selectOption(this)">
+                    <div class="img-round">
+                        <img src="assets/GolaRedonda.png" alt="GolaRedonda" class="icone-gola">
+                    </div>
+                    <figcaption class="roboto-text">
+                        Gola Redonda
+                    </figcaption>
+                </figure>
+                <figure class="fig" onclick="selectOption(this)">
+                    <div class="img-round">
+                        <img src="assets/GolaPolo.png" alt="GolaPolo" class="icone-gola">
+                    </div>
+                    <figcaption class="roboto-text">
+                        Gola Polo
+                    </figcaption>
+                </figure>
+            </div>
+            <p class="roboto-text">escolha o tecido</p>
+            <div class="options tecido">
+                <figure class="fig" onclick="selectOption(this)">
+                    <div class="img-round">
+                        <img src="assets/Seda.png" alt="Seda" class="icone-tecido">
+                    </div>
+                    <figcaption class="roboto-text">
+                        Seda
+                    </figcaption>
+                </figure>
+                <figure class="fig" onclick="selectOption(this)">
+                    <div class="img-round">
+                        <img src="assets/Algodão.png" alt="Algodão" class="icone-tecido">
+                    </div>
+                    <figcaption class="roboto-text">
+                        Algodão
+                    </figcaption>
+                </figure>
+                <figure class="fig" onclick="selectOption(this)">
+                    <div class="img-round">
+                        <img src="assets/Poliester.png" alt="Poliester" class="icone-tecido">
+                    </div>
+                    <figcaption class="roboto-text">
+                        Poliester
+                    </figcaption>
+                </figure>
+            </div>
+            <form class="img-input">
+                <label for="lname" class="roboto-text">Imagem de referência</label><br>
+                <input type="text" id="img-link" name="img-link" placeholder="Insira o link"><br><br>
+                <input type="submit" value="Confirmar Pedido" class="img-submit roboto-text" disabled>
+            </form>
+        </div>
+        <div class="show-ilustracao ">
+            <img src="assets/ilustração.png " alt="ilustração">
+        </div>
+    </section>
+    <div class="ultimos-pedidos">
+        <p class="roboto-text pedidos-text">Ultimos pedidos</p>
+        <div class="d-flex">
+            <figure class="pedidos-fig">
+                <img src="assets/Blusa1.png" alt="Blusa 1" width="180px" height="180px">
+                <figcaption class="roboto-text">
+                    Poliester
+                </figcaption>
+            </figure>
+            <figure class="pedidos-fig">
+                <img src="assets/Blusa1.png" alt="Blusa 1" width="180px" height="180px">
+                <figcaption class="roboto-text">
+                    Poliester
+                </figcaption>
+            </figure>
+        </div>
     </div>
-    <div class="show-"></div>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript " src="script.js "></script>
 </body>
 
 </html>
