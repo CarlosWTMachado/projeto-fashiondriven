@@ -95,7 +95,7 @@ header {
     font-weight: normal;
 }
 
-#img-link {
+.img-link {
     background: #F2F2F2;
     width: 100%;
     height: 40px;
@@ -107,10 +107,14 @@ header {
 .img-submit {
     width: 100%;
     height: 40px;
-    background: #404EED;
+    background: #C4C4C4;
     border-radius: 10px;
     color: #FCFCFC;
     font-size: 20px;
+}
+
+.enabled {
+    background: #404EED;
 }
 
 .pedidos-text {
