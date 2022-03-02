@@ -11,12 +11,20 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F2F2F2;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 p {
     font-size: 18px;
     line-height: 21px;
     color: #232323;
+}
+
+body div {
+    max-width: 1366px;
+    overflow-x: hidden;
 }

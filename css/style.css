@@ -1,5 +1,5 @@
-@import url("./css/reset.css");
-@import url("./css/main.css");
+@import url("./reset.css");
+@import url("./main.css");
 .fixed {
     position: relative;
     display: flex;
@@ -52,6 +52,7 @@ header {
     border: 0.1px solid #C4C4C4;
     border-radius: 100px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .selected {
