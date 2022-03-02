@@ -7,13 +7,15 @@ let pedido = {
     "author": ""
 }
 
-function selectOption(selected) {
-    let figures = selected.parentElement.children;
-    for (let figure of figures) {
-        if (figure != selected) figure.children[0].classList.remove('selected');
-        else figure.children[0].classList.add('selected');
-    }
-    changeFunction(document.querySelector('.img-link').value);
+const renderCardsScreen = async() => {
+    const pedidosContainer = document.querySelector('.ultimos-pedidos > div');
+    const promisse = axios.get('https://mock-api.driven.com.br/api/v4/shirts-api/shirts');
+    promisse.then(value => {
+        const pedidos = value.data;
+        pedidos.forEach(item => {
+            pedidosContainer.innerHTML += TemplateCardPedido(item);
+        })
+    })
 }
 
 const TemplateCardPedido = (item) => {
@@ -33,6 +35,15 @@ const TemplateCardPedido = (item) => {
   `
 }
 
+function selectOption(selected) {
+    let figures = selected.parentElement.children;
+    for (let figure of figures) {
+        if (figure != selected) figure.children[0].classList.remove('selected');
+        else figure.children[0].classList.add('selected');
+    }
+    changeFunction(document.querySelector('.img-link').value);
+}
+
 function redoPedido(newPedido) {
     let text = "Quer copiar esse pedido!\nOK or Cancel.";
     if (confirm(text) == true) {
@@ -40,21 +51,10 @@ function redoPedido(newPedido) {
         pedido.neck = newPedido.dataset.neck;
         pedido.material = newPedido.dataset.material;
         pedido.image = newPedido.dataset.image;
-        pedido.owner = newPedido.dataset.owner;
+        pedido.author = newPedido.dataset.owner;
         clicouBotao();
-        pedido.owner = pedido.author;
+        pedido.author = pedido.owner;
     }
-}
-
-const renderCardsScreen = async() => {
-    const pedidosContainer = document.querySelector('.ultimos-pedidos > div');
-    const promisse = axios.get('https://mock-api.driven.com.br/api/v4/shirts-api/shirts');
-    promisse.then(value => {
-        const pedidos = value.data;
-        pedidos.forEach(item => {
-            pedidosContainer.innerHTML += TemplateCardPedido(item);
-        })
-    })
 }
 
 function changeFunction(value) {
