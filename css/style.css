@@ -1,5 +1,5 @@
-@import url("./reset.css");
-@import url("./main.css");
+@import url("./css/reset.css");
+@import url("./css/main.css");
 .fixed {
     position: relative;
     display: flex;
