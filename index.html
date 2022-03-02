@@ -20,7 +20,7 @@
             <div class="options modelo">
                 <figure class="fig" onclick="selectOption(this)">
                     <div class="img-round">
-                        <img src="assets/tshirt.png" alt="tshirt" class="icone-modelo">
+                        <img src="assets/tshirt.png" alt="t-shirt" class="icone-modelo">
                     </div>
                     <figcaption class="roboto-text">
                         T-shirt
@@ -28,7 +28,7 @@
                 </figure>
                 <figure class="fig" onclick="selectOption(this)">
                     <div class="img-round">
-                        <img src="assets/Camiseta.png" alt="Camiseta" class="icone-modelo">
+                        <img src="assets/Camiseta.png" alt="top-tank" class="icone-modelo">
                     </div>
                     <figcaption class="roboto-text">
                         Camiseta
@@ -36,7 +36,7 @@
                 </figure>
                 <figure class="fig" onclick="selectOption(this)">
                     <div class="img-round">
-                        <img src="assets/Mangalonga.png" alt="Mangalonga" class="icone-modelo">
+                        <img src="assets/Mangalonga.png" alt="long" class="icone-modelo">
                     </div>
                     <figcaption class="roboto-text">
                         Manga longa
@@ -47,7 +47,7 @@
             <div class="options gola">
                 <figure class="fig" onclick="selectOption(this)">
                     <div class="img-round">
-                        <img src="assets/GolaV.png" alt="GolaV" class="icone-gola">
+                        <img src="assets/GolaV.png" alt="v-neck" class="icone-gola">
                     </div>
                     <figcaption class="roboto-text">
                         Gola V
@@ -55,7 +55,7 @@
                 </figure>
                 <figure class="fig" onclick="selectOption(this)">
                     <div class="img-round">
-                        <img src="assets/GolaRedonda.png" alt="GolaRedonda" class="icone-gola">
+                        <img src="assets/GolaRedonda.png" alt="round" class="icone-gola">
                     </div>
                     <figcaption class="roboto-text">
                         Gola Redonda
@@ -63,7 +63,7 @@
                 </figure>
                 <figure class="fig" onclick="selectOption(this)">
                     <div class="img-round">
-                        <img src="assets/GolaPolo.png" alt="GolaPolo" class="icone-gola">
+                        <img src="assets/GolaPolo.png" alt="polo" class="icone-gola">
                     </div>
                     <figcaption class="roboto-text">
                         Gola Polo
@@ -74,7 +74,7 @@
             <div class="options tecido">
                 <figure class="fig" onclick="selectOption(this)">
                     <div class="img-round">
-                        <img src="assets/Seda.png" alt="Seda" class="icone-tecido">
+                        <img src="assets/Seda.png" alt="silk" class="icone-tecido">
                     </div>
                     <figcaption class="roboto-text">
                         Seda
@@ -82,7 +82,7 @@
                 </figure>
                 <figure class="fig" onclick="selectOption(this)">
                     <div class="img-round">
-                        <img src="assets/Algodão.png" alt="Algodão" class="icone-tecido">
+                        <img src="assets/Algodão.png" alt="cotton" class="icone-tecido">
                     </div>
                     <figcaption class="roboto-text">
                         Algodão
@@ -90,18 +90,18 @@
                 </figure>
                 <figure class="fig" onclick="selectOption(this)">
                     <div class="img-round">
-                        <img src="assets/Poliester.png" alt="Poliester" class="icone-tecido">
+                        <img src="assets/Poliester.png" alt="polyester" class="icone-tecido">
                     </div>
                     <figcaption class="roboto-text">
                         Poliester
                     </figcaption>
                 </figure>
             </div>
-            <form class="img-input">
+            <div class="img-input">
                 <label for="lname" class="roboto-text">Imagem de referência</label><br>
                 <input type="text" class="img-link" name="img-link" placeholder="Insira o link" oninput="changeFunction(this.value)"><br><br>
-                <input type="submit" value="Confirmar Pedido" class="img-submit roboto-text" disabled>
-            </form>
+                <input type="button" value="Confirmar Pedido" class="img-submit roboto-text" disabled onclick="clicouBotao()">
+            </div>
         </div>
         <div class="show-ilustracao ">
             <img src="assets/ilustração.png " alt="ilustração">
@@ -111,6 +111,7 @@
         <p class="roboto-text pedidos-text">Ultimos pedidos</p>
         <div class="d-flex"></div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="text/javascript " src="script.js "></script>
 </body>
 
