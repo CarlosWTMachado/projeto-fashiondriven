@@ -9,8 +9,8 @@ let pedido = {
 
 const renderCardsScreen = async() => {
     const pedidosContainer = document.querySelector('.ultimos-pedidos > div');
-    const promisse = axios.get('https://mock-api.driven.com.br/api/v4/shirts-api/shirts');
-    promisse.then(value => {
+    const promise = axios.get('https://mock-api.driven.com.br/api/v4/shirts-api/shirts');
+    promise.then(value => {
         const pedidos = value.data;
         pedidos.forEach(item => {
             pedidosContainer.innerHTML += TemplateCardPedido(item);
@@ -98,6 +98,7 @@ function changeFunction(value) {
 function clicouBotao() {
     const requisicao = axios.post('https://mock-api.driven.com.br/api/v4/shirts-api/shirts', pedido);
     requisicao.then(alert("blusa encomendada com sucesso"), enviouBlusa());
+    requisicao.catch(alert("Ops, não conseguimos processar sua encomenda"))
 }
 
 function enviouBlusa() {
