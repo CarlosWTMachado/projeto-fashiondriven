@@ -97,8 +97,8 @@ function changeFunction(value) {
 
 function clicouBotao() {
     const requisicao = axios.post('https://mock-api.driven.com.br/api/v4/shirts-api/shirts', pedido);
-    requisicao.then(alert("blusa encomendada com sucesso"), enviouBlusa());
-    requisicao.catch(alert("Ops, não conseguimos processar sua encomenda"))
+    requisicao.then(() => { alert("blusa encomendada com sucesso"), enviouBlusa() });
+    requisicao.catch(() => { alert("Ops, não conseguimos processar sua encomenda") })
 }
 
 function enviouBlusa() {
