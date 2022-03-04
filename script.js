@@ -101,7 +101,7 @@ function clicouBotao() {
         alert("blusa encomendada com sucesso");
         enviouBlusa();
     });
-    requisicao.catch(() => { alert("Ops, não conseguimos processar sua encomenda"); })
+    requisicao.catch(() => { alert("Ops, não conseguimos processar sua encomenda"); });
 }
 
 function enviouBlusa() {
